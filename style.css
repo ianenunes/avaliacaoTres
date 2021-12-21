@@ -1,0 +1,77 @@
+body{
+    font-family: Asaf, sans-serif;
+    color: #1c1c1c;
+}
+
+h1, h2, h3 {
+    
+    font-family: Asap, sans-serif;
+    color: #000000;
+
+}
+
+p {
+    font-family: Asap, sans-serif;
+    color: #000000;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3d3d85;
+}
+
+ nav > a {
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+    font-size: 32px;
+    font-family: Asaf, sans-serif;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-family: Asaf, sans-serif;
+}
+
+nav ul {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding: 0%;
+    width: 100%;
+
+}
+
+nav ul li {
+    text-align: center;
+    width: 100%;
+}
+
+form {
+    
+    border: 5px;
+    margin: 5px;
+    padding: 25px;
+    width: 150px;
+        
+}
+
+footer {
+    font-family: Nunito, sans-serif;
+    color: #1c1c1c;
+    font-size: 10px;
+    text-align: center;
+
+
+
+
+
+  
+

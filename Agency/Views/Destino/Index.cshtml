@@ -1,0 +1,67 @@
+@model IEnumerable<Agency.Models.Destino>
+
+@{
+    
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Localidade)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ida)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Volta)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Valor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cliente)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Localidade)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ida)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Volta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Valor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cliente.Nome)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id_destino">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id_destino">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id_destino">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+</body>
+</html>
